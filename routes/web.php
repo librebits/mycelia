@@ -23,11 +23,12 @@ Route::get('/about', function () {
 });
 
 
+/* deprecado
 
 Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 
 
 Route::get('/contact', function () {
