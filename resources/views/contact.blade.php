@@ -13,8 +13,7 @@
     <div class="form-group">
 
       {{Form::label('name', 'Name')}}
-      {{Form::text('name', ' Subcomandante Marcos')}}
-
+      {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter name'])}}
     </div>
 
 
