@@ -27,6 +27,9 @@
        </div>
      </div>
 
+     <footer id="footer" class="text-center">
+      <p>  Copyright 2018 &copy; Omnia Sunt Communia </p>
+     </footer>
       
   </body>
 </html>
