@@ -23,7 +23,12 @@ class MessagesController extends Controller
            $message-> save();
 
         // Redirect to homepage
-           return redirect('/');
+           return redirect('/')->with('success', 'Message Sent');
     }     
     //
+
+    public function getMessages(){
+        $messages = Message::all();
+        return view('messages')->with('messages', $messages);
+    }
 }
