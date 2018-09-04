@@ -37,4 +37,18 @@ Route::get('/contact', function () {
 
 
 
+/* para envío de mensajes a la BBDD 
+
+*/
+
+
+
 Route::post('/contact/submit', 'MessagesController@submit');
+
+
+/* para extraer mensajes de la BBDD y visualizarlos
+
+*/
+
+
+Route::post('/messages', 'MessagesController@getMessages');
