@@ -12,34 +12,16 @@
 */
 
 
-Route::get('/', function () {
-    return view('home');
-});
-
-
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-
-/* deprecado
-
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
-
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-
-
-/* para envío de mensajes a la BBDD 
+/* para envío de mensajes a la BBDD ... pasando por PagesController.php
 
 */
+
+
+Route::get('/', 'PagesController@getHome');
+
+Route::get('/about', 'PagesController@getAbout');
+
+Route::get('/contact', 'PagesController@getContact');
 
 
 
