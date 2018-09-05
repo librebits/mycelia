@@ -49,6 +49,6 @@ Route::post('/contact/submit', 'MessagesController@submit');
 /* para extraer mensajes de la BBDD y visualizarlos
 
 */
-
+ 
 
 Route::get('/messages', 'MessagesController@getMessages');
